@@ -1,87 +1,136 @@
-@import url('https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400..700;1,400..700&family=Frank+Ruhl+Libre:wght@300..900&family=Oswald:wght@200..700&family=Signika+Negative:wght@300..700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400..700;1,400..700&family=Frank+Ruhl+Libre:wght@300..900&family=Oswald:wght@200..700&family=Signika+Negative:wght@300..700&display=swap");
 
-:root{
-    --color-principal: #575b5bf8;
-    --color-white: white;
-    --color-blue: #1E90FF;
+:root {
+  --color-principal: #2c2c2cf8;
+  --color-white: white;
+  --color-blue: #1e90ff;
 }
-body{
-background-color: var(--color-principal);
+body {
+  background-color: var(--color-principal);
 }
-h1, h2{
-    color: var(--color-white);
-    font-weight: 700;
-    
+h1,
+h2 {
+  color: var(--color-white);
+  font-weight: 700;
 }
-.all, .navegacao{
-    display: flex;
-    flex-direction: row;
-    align-items: center
+.all,
+.navegacao {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
 }
-.all{
-    background-color: rgb(75, 75, 77);
-    box-shadow: 1px 1px 4px;
-    justify-content: space-between;
-    padding: 0 5%;
-    height: 60px;
+.all {
+  background-color: rgb(27, 27, 27);
+  box-shadow: 1px 1px 4px;
+  justify-content: space-between;
+  padding: 0 5%;
+  height: 60px;
+  position: fixed;
+  opacity: 80%;
+  width: 1180px;
+  top: 0;
 }
-.navegacao{
-    gap: 3em;
+.navegacao {
+  gap: 3em;
 }
-.navegacao a{
-    text-decoration: none;
-    color: var(--color-blue);
-    font-family: "Cabin", sans-serif;
-    font-weight: 700;
+.navegacao a {
+  text-decoration: none;
+  color: var(--color-white);
+  font-family: "Cabin", sans-serif;
+  font-weight: 700;
+  transition: 0.6s;
 }
-.Atencao{
-    font-family: "Signika Negative", sans-serif;
-    color: var(--color-blue);
-    font-size: 40px;
+.navegacao a:hover {
+  transform: scale(1.1);
+  color: var(--color-blue);
+  text-decoration: underline;
 }
-#texto{
-    display: inline-block;
-    color: var(--color-blue);
+.Atencao {
+  font-family: "Signika Negative", sans-serif;
+  color: var(--color-blue);
+  font-size: 40px;
+  margin: 0% 0% 0% 5%;
+  display: inline-block;
+  flex-direction: column;
+  display: list-item;
+}
+ol {
+  display: inline-block;
+  list-style-position: inside;
+}
+#texto {
+  display: inline-block;
+  color: var(--color-blue);
 }
 .ks {
-    color: #1E90FF;
-    display: inline-block;
-    width: 10px;
-    animation: pss 0.5s infinite alternate;
+  color: #1e90ff;
+  display: inline-block;
+  width: 10px;
+  animation: pss 0.5s infinite alternate;
 }
-@keyframes pss{
-    0%{opacity: 1;}
-    100%{opacity: 0;}
+@keyframes pss {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
 }
-.bagulho{
-    font-size: 40px;
+.bagulho {
+  font-size: 40px;
 }
-#GGsz{
-    font-size: 45px;
-    color: var(--color-blue)
+#GGsz {
+  font-size: 45px;
+  color: var(--color-blue);
 }
-.Logo{
-    font-size: 60px;
+.Logo {
+  font-size: 60px;
+  margin: 5% 0% 0% 0%;
 }
-p{
-    color: white;
-    font-size: 25px;
-    font-family: "Frank Ruhl Libre", sans-serif;
+p {
+  color: white;
+  font-size: 25px;
+  font-family: "Frank Ruhl Libre", sans-serif;
 }
-#skfg{
-    color: var(--color-blue);
-    font-family: "Frank Ruhl Libre", sans-serif;
-    font-weight: 700;
+#skfg {
+  color: var(--color-blue);
+  font-family: "Frank Ruhl Libre", sans-serif;
+  font-weight: 700;
 }
-th, td{
-    color: white;
-    font-family: "Frank Ruhl Libre", sans-serif;
+td,
+th {
+  color: white;
+  font-family: "Frank Ruhl Libre", sans-serif;
 }
-li{
-    color: white;
-    font-size: 30px;
+li {
+  color: white;
+  font-size: 30px;
 }
-table tr td img{
-    width: 100px;
-    height: 100px;
+table tr td img {
+  width: 100px;
+  height: 100px;
+  transition: 0.5s;
+}
+table tr td img:hover {
+  transform: scale(1.1);
+}
+.bb {
+  transition: 0.6s;
+}
+.bb:hover {
+  transform: scale(1.15);
+}
+.sumir {
+  color: transparent;
+  margin: 0% 0% 5% 0%;
+}
+.tabela {
+  justify-content: center;
+  place-items: center;
+}
+table {
+  border-color: var(--color-blue);
+}
+span {
+  color: var(--color-blue);
 }
